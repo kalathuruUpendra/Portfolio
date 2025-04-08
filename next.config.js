@@ -2,8 +2,7 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
   enabled: process.env.ANALYZE === "true",
 });
 
-const { withNetlify } = require("@netlify/next");
-
+/** @type {import('next').NextConfig} */
 const nextConfig = withBundleAnalyzer({
   output: process.env.BUILD_STANDALONE === "true" ? "standalone" : undefined,
   reactStrictMode: true,
@@ -12,7 +11,7 @@ const nextConfig = withBundleAnalyzer({
     dirs: ["src"],
   },
   images: {
-    domains: ["https://flagcdn.com"],
+    domains: ["flagcdn.com"],
   },
   webpack: (config) => {
     config.module.rules.push({
@@ -26,9 +25,8 @@ const nextConfig = withBundleAnalyzer({
       child_process: false,
       tls: false,
     };
-
     return config;
   },
 });
 
-module.exports = withNetlify(nextConfig);
+module.exports = nextConfig;
