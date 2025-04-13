@@ -24,7 +24,7 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
   },
   {
     index: 1,
-    title: "Text Emotion Detection",
+    title: "AI Enhance StudyGuide",
     href: "/projects",
     tags: [
       "HTML",
@@ -36,18 +36,18 @@ export const PROJECT_SHOWCASE: ProjectShowcaseListItem[] = [
       "Flask Micro Framework",
     ],
     image: {
-      LIGHT: "/images/projects/manyGamesLight.webp",
-      DARK: "/images/projects/manyGamesDark.webp",
+      LIGHT: "/images/projects/AIChat.png",
+      DARK: "/images/projects/AIChat.png",
     },
   },
   {
     index: 2,
-    title: "AI Chatbot",
+    title: "Bank Management System",
     href: "/projects",
     tags: ["APIs", "Python", "HTML", "Vercel", "Zustand", "React DND"],
     image: {
-      LIGHT: "/images/projects/kanbanLight.webp",
-      DARK: "/images/projects/kanbanDark.webp",
+      LIGHT: "/images/projects/bank.png",
+      DARK: "/images/projects/banksys.png",
     },
   },
 ];
@@ -68,11 +68,7 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
   {
     name: "Text Emotion Detection",
     favicon: "/images/projects/logos/kanban.ico",
-    imageUrl: [
-      "/images/projects/kanbanLight.webp",
-      "/images/projects/kanbanDark.webp",
-      "/images/projects/kanbanCardLight.webp",
-    ],
+    imageUrl: ["/images/projects/kanbanLight.webp"],
     description:
       "It is emotion capturer from given text, so that any AI ChatBots can understand the emotion in our prompt.",
     sourceCodeHref: "https://github.com/BUMBAIYA/kanba",
@@ -81,16 +77,10 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
   {
     name: "AI Chatbot",
     favicon: "/images/projects/logos/manygames.ico",
-    imageUrl: [
-      "/images/projects/manyGamesDark.webp",
-      "/images/projects/manyGamesLight.webp",
-      "/images/projects/manyGames2048.webp",
-      "/images/projects/manyGamesPuzzle.webp",
-      "/images/projects/manyGamesWordle.webp",
-    ],
+    imageUrl: ["/images/projects/manyGamesPuzzle.webp"],
     description:
       "AI Chatbot that can assist you in movie suggestions, games, and quizzes. It uses open source APIs to get data.",
-    sourceCodeHref: "https://github.com/BUMBAIYA/ManyGame",
+    sourceCodeHref: "",
     liveWebsiteHref: "https://manygames.vercel.ap",
   },
   {
@@ -106,29 +96,20 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     liveWebsiteHref: siteMetadata.siteUrl,
   },
   {
-    name: "Covid Tracker",
+    name: "Bank-Management-System",
     favicon: "/images/projects/logos/covidtracker.ico",
-    imageUrl: [
-      "/images/projects/covidTracker.webp",
-      "/images/projects/covidTrackerMap.webp",
-      "/images/projects/covidTrackerTable.webp",
-    ],
+    imageUrl: ["/images/projects/bank.png", "/images/projects/image.png"],
     description:
-      "Get latest covid related stats in a table where user can filter using country and cases. It also has a map which show every countries data for quick view. It uses an open source api (disease.sh). Made using Reactjs, Javascript and MUI",
+      "BankSys is a Bank Management System web application. It is designed to manage the operations of a bank, including customer accounts, transactions, and financial reports. The application provides a user-friendly interface for managing bank operations and generating reports. It have different roles like Admin, Manager, Staff and Customer.",
     sourceCodeHref: "https://github.com/BUMBAIYA/CovidTracker",
     liveWebsiteHref: "https://bumbaiya.github.io/CovidTracker",
   },
   {
-    name: "Stock predictor",
+    name: "StudyGuide - AI Research Paper Summarizer",
     favicon: "/images/projects/logos/stockpredictor.ico",
-    imageUrl: [
-      "/images/projects/stockPredictor.webp",
-      "/images/projects/stockPredictorCandleChart.webp",
-      "/images/projects/stockPredictorCompareChart.webp",
-      "/images/projects/stockPredictorLineChart.webp",
-    ],
+    imageUrl: ["/images/projects/AIChat.png", "/images/projects/banksys.png"],
     description:
-      "Get prediction of opening and closing price of stocks price. Frontend is made using Reactjs and backend is made using Flask and Machine learning model are trained using Tensorflow",
+      "An Ai powered Chatbot that can assist you in getting the summary of any research paper. It uses open source APIs to get data.",
     sourceCodeHref: "https://github.com/Rohrschachh/Stock-Market-Predictor",
   },
 ];
